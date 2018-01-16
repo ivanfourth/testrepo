@@ -44,6 +44,8 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
+    ENV.locationType = 'hash';
+    ENV.rootURL = '/project/';
 		ENV.baseURL = '/project-name';
 	ENV.locationType = 'hash';
   }
